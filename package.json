@@ -15,10 +15,11 @@
     "guid-typescript": "^1.0.9",
     "long": "^4.0.0",
     "onnx-proto": "^4.0.4",
-    "onnxruntime-common": "^1.14.0",
+    "onnxruntime-common": "file:../common",
     "platform": "^1.3.6"
   },
   "scripts": {
+    "prepare": "tsc",
     "build:doc": "node ./script/generate-operator-md",
     "pull:wasm": "node ./script/pull-prebuilt-wasm-artifacts",
     "test:e2e": "node ./test/e2e/run",
