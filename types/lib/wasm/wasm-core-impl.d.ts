@@ -21,7 +21,7 @@ export declare const releaseSession: (sessionId: number) => void;
 /**
  * perform inference run
  */
-export declare const run: (sessionId: number, inputIndices: number[], inputs: SerializableTensor[], outputIndices: number[], options: InferenceSession.RunOptions) => SerializableTensor[];
+export declare const run: (sessionId: number, inputIndices: number[], inputs: SerializableTensor[], outputIndices: number[], options: InferenceSession.RunOptions) => Promise<SerializableTensor[]>;
 /**
  * end profiling
  */

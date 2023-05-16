@@ -89,7 +89,7 @@ declare class Event implements Profiler.Event {
     timer?: WebGLQuery | undefined;
     ctx?: WebGLContext | undefined;
     constructor(category: Profiler.EventCategory, name: string, startTime: number, endCallback: (e: Event) => void | Promise<void>, timer?: WebGLQuery | undefined, ctx?: WebGLContext | undefined);
-    end(): void | Promise<void>;
+    end(): Promise<void>;
     checkTimer(): Promise<number>;
 }
 export declare class Profiler {
